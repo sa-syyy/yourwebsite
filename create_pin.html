@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .upload-box {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .upload-box:hover {
+            border-color: #aaa;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #e60023;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c2001d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Pin</h1>
+        <div class="upload-box">
+            <p>Choose a file or drag and drop it here</p>
+            <p>We recommend using high-quality .jpg files less than 20 MB or .mp4 files less than 200 MB.</p>
+        </div>
+        <input type="text" placeholder="Add a title" />
+        <textarea placeholder="Add a detailed description"></textarea>
+        <input type="url" placeholder="Add a link" />
+        <select>
+            <option value="" disabled selected>Choose a board</option>
+            <option value="board1">Board 1</option>
+            <option value="board2">Board 2</option>
+        </select>
+        <button>Save from URL</button>
+    </div>
+</body>
+</html>

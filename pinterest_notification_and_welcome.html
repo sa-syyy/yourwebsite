@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Notification and Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .notification-box, .welcome-box {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        .notification-box {
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .notification-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .notification-box button {
+            margin: 5px 10px 0;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .notification-box button.allow {
+            background-color: #0073e6;
+            color: white;
+        }
+        .notification-box button.block {
+            background-color: #d9d9d9;
+            color: black;
+        }
+        .welcome-box {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .welcome-box .profile-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e0e0e0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .welcome-box h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .welcome-box p {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .welcome-box button {
+            width: 100%;
+            background-color: #e60023;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .welcome-box a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification-box">
+        <h3>in.pinterest.com wants to</h3>
+        <p>Show notifications</p>
+        <button class="allow">Allow</button>
+        <button class="block">Block</button>
+    </div>
+
+    <div class="welcome-box">
+        <div class="profile-picture">T</div>
+        <h2>Welcome to Pinterest</h2>
+        <h2>Thejuvasista!</h2>
+        <p>Your answers to the next few questions will help us find the right ideas for you</p>
+        <button>Next</button>
+        <a href="#">Already have a Pinterest account? Log in instead</a>
+    </div>
+</body>
+</html>

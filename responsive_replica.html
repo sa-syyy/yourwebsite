@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Replica</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        /* Main Section */
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1rem;
+            background-color: #fff;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 1rem;
+            width: 300px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Replica</h1>
+        <p>A simple page inspired by your screenshot.</p>
+    </header>
+
+    <section class="main-section">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+            <h2>Card Title 1</h2>
+            <p>This is a description for card 1.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+            <h2>Card Title 2</h2>
+            <p>This is a description for card 2.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+            <h2>Card Title 3</h2>
+            <p>This is a description for card 3.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Responsive Replica. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

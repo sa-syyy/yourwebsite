@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language and Region Selection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 14px;
+            color: #6b6b6b;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .dropdown label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #f9f9f9;
+            outline: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            background-color: #e60023;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #c0001e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What's your language and where do you live?</h2>
+        <p>This helps us find you more relevant content. We won’t show it on your profile.</p>
+        <div class="dropdown">
+            <label for="language">Language</label>
+            <select id="language">
+                <option value="en-US">English (US)</option>
+                <option value="en-UK">English (UK)</option>
+                <option value="fr-FR">French</option>
+                <option value="es-ES">Spanish</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="region">Region</label>
+            <select id="region">
+                <option value="IN">India (भारत)</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="FR">France</option>
+            </select>
+        </div>
+        <button class="btn">Next</button>
+    </div>
+</body>
+</html>

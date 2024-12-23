@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are You Interested In?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subheader {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">What are you interested in?</div>
+        <div class="subheader">This will customize your new home feed</div>
+        <div class="grid">
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Wallpapers"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Women's Fashion"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Photography"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Phone Wallpaper"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Cute Drawing"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Writing"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Beauty"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Life Hacks"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Anime"></div>
+            <div class="grid-item"><img src="https://via.placeholder.com/150" alt="Henna"></div>
+        </div>
+        <div class="footer">Pick 5 more</div>
+    </div>
+</body>
+</html>

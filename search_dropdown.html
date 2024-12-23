@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            margin: 50px;
+            position: relative;
+            width: 400px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-dropdown {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+        }
+        .search-dropdown div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-dropdown div:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search..." onfocus="showDropdown()" onblur="hideDropdown()">
+        <div class="search-dropdown" id="dropdown">
+            <div>Christmas videos</div>
+            <div>Wallpaper aesthetic</div>
+            <div>Poses in saree</div>
+            <div>Female art</div>
+            <div>Outfit ideas</div>
+            <div>Cute drawings</div>
+            <div>Girly photography</div>
+            <div>Rangoli designs</div>
+        </div>
+    </div>
+
+    <script>
+        function showDropdown() {
+            document.getElementById('dropdown').style.display = 'block';
+        }
+
+        function hideDropdown() {
+            // Delay to allow clicking on dropdown items
+            setTimeout(() => {
+                document.getElementById('dropdown').style.display = 'none';
+            }, 200);
+        }
+    </script>
+</body>
+</html>

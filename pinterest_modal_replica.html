@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Modal Replica</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    .background {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url('https://via.placeholder.com/1366x768') center/cover no-repeat;
+    }
+
+    .modal {
+      position: absolute;
+      background: #fff;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .modal img {
+      width: 40px;
+      margin-bottom: 20px;
+    }
+
+    .modal h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .modal p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .modal form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .modal input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .modal button {
+      background-color: #e60023;
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal button:hover {
+      background-color: #c1001b;
+    }
+
+    .modal .or {
+      margin: 10px 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .modal .google-signin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal .google-signin img {
+      width: 20px;
+    }
+
+    .modal .footer {
+      margin-top: 15px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .modal .footer a {
+      color: #e60023;
+      text-decoration: none;
+    }
+
+    .modal .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .modal {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="modal">
+      <img src="https://via.placeholder.com/40" alt="Pinterest Logo">
+      <h1>Welcome to Pinterest</h1>
+      <p>Find new ideas to try</p>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Create a password" required>
+        <input type="text" placeholder="Birthdate (dd-mm-yyyy)" onfocus="(this.type='date')" required>
+        <button type="submit">Continue</button>
+      </form>
+      <div class="or">OR</div>
+      <div class="google-signin">
+        <img src="https://via.placeholder.com/20" alt="Google Icon">
+        <span>Continue with Google</span>
+      </div>
+      <div class="footer">
+        By continuing, you agree to Pinterest's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        <br>
+        Already a member? <a href="#">Log in</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
